@@ -9,6 +9,10 @@ a{
     color: #fff;
 }
 
+.section-with-def-style{
+    padding: 100px 200px;
+}
+
 
 /* Header */
 header{
@@ -117,4 +121,135 @@ nav{
 }
 
 /* Domain */
+.domain{
+    padding: 100px 338px;
+    color: #a2a2a2;
+    font-weight: 300;
+}
+
+.title-domain-sec{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #383737;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.descr-domain-sec{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.create-domain{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #a2a2a2;
+}
+
+.slice-domain{
+    width: 10%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+.three-w{
+    text-align: center;
+}
+
+.your-text-domain{
+    flex: 1;
+    border-left: 1px solid #a2a2a2;
+    border-right: 1px solid #a2a2a2;
+    padding: 5px 10px;
+    font-weight: 550;
+    color: #383737;
+}
+
+.com-domain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-info-domain{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-info-domain td{
+    width: 25%;
+    text-align: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border: 1px solid #a2a2a2;
+}
+
+.td-with-white-box,
+.first-td-with-w-b,
+.last-td-with-w-b,
+.td-last-row{
+    position: relative;
+}
+
+.td-with-white-box::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: -0.5em;
+    background-color: #fff;
+}
+
+.td-with-white-box::after{
+    content: '';
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    background-color: #fff;
+}
+
+.first-td-with-w-b::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -0.5em;
+    background-color: #fff;
+}
+
+.last-td-with-w-b::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -0.5em;
+    margin-left: -1em;
+    background-color: #fff;
+}
+
+.td-last-row::after{
+    content: '';
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    margin-left: -0.5em;
+    margin-top: -1em;
+    background-color: #fff;
+}
 
