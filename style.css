@@ -417,3 +417,83 @@ nav{
 .green-color-border{
     border-color: #1abc9c !important;
 }
+
+/* About us */
+.about-us{
+    display: flex;
+    padding: 100px 200px;
+}
+
+.desrc-about-us{
+    width: 46%;
+    box-sizing: border-box;
+    padding-right: 100px;
+    border-right: 1px dashed #a2a2a2;
+}
+
+.DAU-title{
+    margin-bottom: 18px;
+    font-size: 2em;
+    color: #383737;
+}
+
+.DAU-title > span{
+    font-weight: bold;
+}
+
+.DAU-text{
+    color: #a2a2a2;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.AU-img-link{
+    width: 54%;
+    box-sizing: border-box;
+    padding: 0px 25px 0px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.elem-AUIL{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-elem-AUIL{
+    width: 6em;
+    height: 6em;
+    border: 5px solid #e5e5e5;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.cont-elem-AUIL > img{
+    width: 100%;
+}
+
+.name-elem-AUIL{
+    color: #383737;
+}
+
+.job-elem-AUIL{
+    margin: 7px 0px;
+    color: #a2a2a2;
+    font-weight: 300;
+}
+
+.list-link-elem-AUIL{
+    display: flex;
+    justify-content: space-between;
+    width: 6em;
+}
+
+.list-link-elem-AUIL i{
+    color: #a2a2a2;
+}
+
+.checked-link{
+    color: #1f89ba !important;
+}
