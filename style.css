@@ -573,3 +573,61 @@ nav{
 .dot-slide-checked{
     background-color: #fff;
 }
+
+/* About servesr */
+.about-servesr{
+    padding: 100px 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5%;
+}
+
+.elem-about-server{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-icon-EAS{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-EAS{
+    color: #fff;
+    font-size: 1.7em;
+}
+
+.title-EAS{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #383737;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.desc-EAS{
+    color: #a2a2a2;
+    font-weight: 300;
+    text-align: center;
+}
+
+.yellow-CIEAS{
+    background-color: #f1c40f;
+}
+
+.blue-CIEAS{
+    background-color: #0faff1;
+}
+
+.grey-CIEAS{
+    background-color: #95a5a6;
+}
+
+.red-CIEAS{
+    background-color: #f1540f;
+}
