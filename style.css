@@ -9,18 +9,18 @@ a{
     color: #fff;
 }
 
-.section-with-def-style{
-    padding: 100px 200px;
+.section-padding-with-top{
+    padding: 100px 13.89%;
+}
+
+.section-padding{
+    padding: 0px 13.89%;
 }
 
 
 /* Header */
 header{
-    background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.8), 
-      rgba(0, 0, 0, 0.8)
-    ),
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),
     url(./src/images/header/BG.png) no-repeat;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -29,7 +29,6 @@ header{
     background-position: center center;
 
     color: #fff;
-    padding: 0px 200px;
 }
 
 nav{
@@ -45,16 +44,22 @@ nav{
     padding: 35px 0px;
     font-size: 1em;
     position: relative;
+    transition: color 0.2s ease-in;
 }
 
-.selected::after{
+.elem-menu::after{
     content: '';
     display: block;
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background-color: transparent;
     top: 100%;
+    transition: all 0.2s ease-in;
+}
+
+.selected::after{
+    background-color: #fff;
 }
 
 .menu :last-child{
@@ -63,7 +68,7 @@ nav{
 
 .header-slogan{
     text-align: center;
-    padding: 320px;
+    padding: 320px 29.63%;
 }
 
 .slogan-title{
@@ -92,6 +97,7 @@ nav{
 
 .cont-a-sign-reg > a{
     font-size: 1.3em;
+    transition: color 0.2s ease-in;
 }
 
 .cont-a-login{
@@ -110,19 +116,20 @@ nav{
     left: 100%;
     top: 0;
     border-right: 2em solid transparent;
-    border-top: 7.58em solid #21424a;
+    border-top: 7.55em solid #21424a;
   }
 
 .cont-a-register{
     width: 51.1%;
     background-color: #2fac6c;
-    padding: 50px 200px 50px 0px;
+    padding-right: 12.5em;
+    padding-left: 2em;
     text-align: center;
 }
 
 /* Domain */
 .domain{
-    padding: 100px 338px;
+    padding: 100px 23.5%;
     color: #a2a2a2;
     font-weight: 300;
 }
@@ -152,6 +159,7 @@ nav{
 
 .slice-domain{
     width: 10%;
+    width: 5.18em;
     padding: 0px 15px;
     box-sizing: border-box;
 }
@@ -263,15 +271,12 @@ nav{
     background-position-x: center;
 }
 
-.content-packages{
-    padding: 0px 200px;
-}
-
 .list-packages{
     padding: 100px 0px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 5%;
+    grid-template-columns: repeat(auto-fit, 14.3em);
+    grid-gap: 2.5em 2.5em;
+    justify-content: center;
     color: #a2a2a2;
     font-weight: 300;
     border-bottom: 1px dashed #a2a2a2;
@@ -355,6 +360,7 @@ nav{
     font-size: 1.1em;
     font-weight: bold;
     color: #383737;
+    transition: color 0.2s ease-in;
 }
 
 .svg-progress-bar{
@@ -421,7 +427,6 @@ nav{
 /* About us */
 .about-us{
     display: flex;
-    padding: 100px 200px;
 }
 
 .desrc-about-us{
@@ -451,14 +456,17 @@ nav{
     width: 54%;
     box-sizing: border-box;
     padding: 0px 25px 0px 100px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 8.4em);
+    grid-gap: 1em 1em;
+    justify-content: center;
 }
 
 .elem-AUIL{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 
 .cont-elem-AUIL{
@@ -523,7 +531,7 @@ nav{
 }
 
 .content-slider{
-    padding: 54px 338px;
+    padding: 54px 23.5%;
     color: #fff;
     font-weight: 300;
     line-height: 1.5;
@@ -576,7 +584,6 @@ nav{
 
 /* About servesr */
 .about-servesr{
-    padding: 100px 200px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 5%;
@@ -608,6 +615,7 @@ nav{
     color: #383737;
     font-size: 1.2em;
     font-weight: bold;
+    text-align: center;
 }
 
 .desc-EAS{
@@ -630,4 +638,144 @@ nav{
 
 .red-CIEAS{
     background-color: #f1540f;
+}
+
+/* footer */
+footer{
+    background-color: #2a2a2a;
+}
+
+.fnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+    border-bottom: 1px solid #424242;
+}
+
+.fmenu{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.elem-fmenu{
+    color: #949494;
+    font-weight: 300;
+    margin: 3px 12px;
+}
+
+.fmenu :last-child{
+    margin-right: 0;
+}
+
+.elem-fmenu-chacted{
+    color: #fff;
+}
+
+.f-another-info{
+    padding: 35px 0px;
+    color: #949494;
+    font-weight: 300;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.f-more-desc{
+    flex-basis: 0;
+    min-width: 20em;
+    padding: 20px 3rem 20px 0px;
+    box-sizing: border-box;
+}
+
+.f-more-desc :nth-child(2){
+    padding-top: 10px;
+}
+
+.half-bold{
+    font-weight: 500;
+}
+
+.f-more-nav{
+    flex-basis: 0;
+    min-width: 25.5em;
+    display: flex;
+    padding: 20px 0.75rem;
+    box-sizing: border-box;
+    justify-content: center;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #424242;
+}
+
+.f-more-nav > ul{
+    margin: 0px 20px;
+}
+
+.elem-f-more-nav {
+    list-style-type: none;
+    margin: 5px 0px;
+}
+
+.elem-f-more-nav:before {
+    color: #949494;
+    font-family: "Font Awesome 5 Free"; font-weight: 600; content: "\f105";
+    padding-right: 10px;
+}
+
+.elem-f-more-nav > a{
+    color: #949494;
+}
+
+.f-contacts{
+    flex-basis: 0;
+    min-width: 18em;
+    padding: 20px 0px 20px 2rem;
+    box-sizing: border-box;
+}
+
+.elem-f-contacts{
+    margin-bottom: 0.5rem;
+}
+
+.elem-f-contacts > i{
+    margin-right: 5px;
+}
+
+.elem-f-contacts > a{
+    color: #949494;
+}
+
+/* hover */
+.elem-menu:hover{
+    color: #a2a2a2;
+}
+
+.elem-menu:hover:after{
+    background-color: #a2a2a2;
+}
+
+.cont-a-login > a:hover{
+    color: #2fac6c;
+}
+
+.cont-a-register > a:hover{
+    color: #21424a;
+}
+
+.contaoiner-select-this-packag > .y-color-border > a:hover{
+    color: #f9d423;
+}
+
+.contaoiner-select-this-packag > .grey-color-border > a:hover{
+    color: #7f8c8d;
+}
+
+.contaoiner-select-this-packag > .red-color-border > a:hover{
+    color: #f85f40;
+}
+
+.contaoiner-select-this-packag > .green-color-border > a:hover{
+    color: #1abc9c;
 }
